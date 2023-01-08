@@ -1,24 +1,85 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
-            nav {
-                background-color: gray;
-                padding: 1rem;
-            }
-        </style>
-    </head>
-<body>
-<h1>Gorro_Rojo</h1>
-<p>I'm hosted with GitHub ages.</p>
-<nav>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <title>Gorro_Rojo</title>
+    <style>
+      * {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+      }
+    nav {
+        background-color: gray;
+        padding: 1rem;
+      }
+      nav li {
+        text-decoration:none;
+      }
+      section {
+        background-color: lightgray;
+        padding: 1rem;
+        
+      }
+      section header {
+        font-weight: bold;
+        font-size: large;
+      }
+      dl span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px black solid;
+      }
+      dt {
+        font-weight: 500;
+        margin:0;
+      }
+      dd {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    
     <header>
-    <a href="/" disabled>CV</a>
-    <a href="/portfolio.html">Portfolio</a>
-    <section>
-        <h3></h3>
-    </section>
-</header>
-</nav>
-</body>
+      <h1>Gorro_Rojo</h1>
+      <nav>
+      
+        <ul>
+          <li>
+            <a href="/" disabled>CV</a>
+          </li>
+          <li>
+            <a href="/portfolio.html">Portfolio</a>
+          </li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+      <section id="details">
+        <figure>
+          <img src="" alt="">
+          <figcaption></figcaption>
+        </figure>
+        <dl>
+        <dt>Location</dt>
+        <dt>Date of Birth</dt>
+
+      </dl>
+      </section>
+<section id="languages">
+  <header>Languages</header>
+  <dl>
+    <span><dt>🇪🇸 Spanish</dt><dd>Native</dd></span>
+    <span><dt>🇬🇧 English</dt><dd>C2</dd></span>
+    <span><dt>🇫🇷 French</dt><dd>B1</dd></span>
+    <span><dt>🇦🇷 Argentine Sign Language</dt><dd>A1</dd></span>
+  </dl>
+</section>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
 </html>
