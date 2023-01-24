@@ -64,6 +64,13 @@ dt,
 dd {
   margin: 0;
 }
+dl > dd:only-child {
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  border: 3px red solid;
+}
 
 h1,
 h2,
@@ -77,10 +84,7 @@ figure {
   --image-size: 1;
   width: var(--size);
   height: calc(1 * var(--size));
-  /* overflow: hidden; */
-  /* border-radius: var(--size); */
   --position-y: 0%;
-  /* border: 1px gray dashed; */
   margin-bottom: 0;
   margin-left: 0;
 }
@@ -148,9 +152,9 @@ li {
 .accent {
   color: var(--accent);
 }
-dl > dd {
-  font-size: 0.8rem;
-  margin-top: 0.8rem;
-  margin-left: 0.8rem;
-  margin-right: 0.8rem;
+.institution {
+  font-size: .8rem;
+  opacity: .8;
+  font-weight: 0;
+  font-style:italic;
 }
