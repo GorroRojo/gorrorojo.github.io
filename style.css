@@ -1,7 +1,7 @@
-* {
+html {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  --accent: #FF4747
+  --accent: #ff4747;
   /* rgb(175, 41, 0); */
   /* outline: 0.1px rgba(128, 128, 128, 0.123) dashed */
 }
@@ -48,10 +48,13 @@ section:empty {
   display: none;
   padding: 0;
 }
-section header {
+section h3 {
   font-weight: bold;
   font-size: large;
   border-bottom: 1px #222 solid;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 0.2em;
 }
 dl div:has(dt) {
   display: flex;
@@ -94,8 +97,36 @@ aside dl {
   margin: 0;
   padding: 1rem;
   display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
   font-size: 0.73em;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+aside dl * {
+  position: relative;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  margin: 0;
+  text-align: center;
+  line-height: 1rem;
+}
+aside dl div {
+    
+    margin: .7rem .2rem;
+}
+aside dl dt {
+  --iconsize: 2rem;
+  position: absolute;
+  bottom: calc(0em - var(--iconsize) / 4);
+  left: 0;
+  right: 0;
+  font-size: var(--iconsize);
+  opacity: 0.1;
+  /*z-index: 1;
+  */color: var(--accent);
+  filter: brightness(200%);
+  -webkit-filter: brightness(200%);
 }
 #portrait-background {
   z-index: 0;
@@ -154,8 +185,8 @@ li {
   color: var(--accent);
 }
 .institution {
-  font-size: .8rem;
-  opacity: .8;
+  font-size: 0.8rem;
+  opacity: 0.8;
   font-weight: 0;
-  font-style:italic;
+  font-style: italic;
 }
