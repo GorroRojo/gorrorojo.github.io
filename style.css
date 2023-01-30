@@ -1,6 +1,7 @@
 html {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+  font-family: "Inter", sans-serif;
   --accent: #ff4747;
   /* rgb(175, 41, 0); */
   /* outline: 0.1px rgba(128, 128, 128, 0.123) dashed */
@@ -11,15 +12,79 @@ body {
   position: relative;
   background: rgb(43, 43, 43);
 }
-body > header {
+#topbar {
   color: #eee;
   background-color: rgb(34, 34, 34);
-  padding: 1rem;
+  padding: 0rem;
+  height: 3rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+#topbar header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+}
+#topbar h1 {
+  color: var(--accent);
+  font-size: 2rem;
+  font-weight: 0;
+  opacity: 1;
+  /* position: absolute; */
+  z-index: 0;
+  cursor: default;
+}
+#topbar a {
+  color: unset;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#topbar li {
+  border-radius: 0;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  width: 6rem;
+  transition: 100ms background;
+  -webkit-transition: 100ms background;
+  -moz-transition: 100ms background;
+  -ms-transition: 100ms background;
+  -o-transition: 100ms background;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+#topbar .tab-active {
+  background: rgb(43, 43, 43);
+}
+#topbar li:not(.tab-active):hover {
+  background: rgb(30, 30, 30);
+}
+#topbar ul {
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  justify-content: center;
+  align-items: stretch;
 }
 nav {
+  height: 100%;
 }
 nav li {
   text-decoration: none;
@@ -35,34 +100,57 @@ main {
   right: 0;
   color: #ddd;
 }
-
-section {
-  background-color: rgb(51, 51, 51);
-  padding: 1rem;
-  max-width: 400px;
-  margin: 1em;
-  border-radius: 3px;
-  box-shadow: rgba(3, 3, 3, 0.26) 0 0 10px;
+#sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 section:empty {
   display: none;
   padding: 0;
 }
+section {
+  /* background-color: rgb(, , ); */
+  padding: 1rem;
+  max-width: 400px;
+  margin: 1em;
+  border-radius: 3px;
+  /* border-left: 1px var(--accent) solid */
+}
 section h3 {
   font-weight: bold;
-  font-size: large;
-  border-bottom: 1px #222 solid;
+  font-size: 3rem;
+  border-bottom: 1px var(--accent) solid;
   margin: 0;
-  text-align: center;
-  padding-bottom: 0.2em;
+  /* text-align: center; */
+  padding-bottom: 0em;
 }
-dl div:has(dt) {
+#volunteering {
+  background-image: none;
+}
+section dl div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: rgb(20, 20, 20);
+  padding: 1rem;
+  margin: 1rem 0;
+  /* outline: 1px red solid; */
 }
 dt {
-  font-weight: 500;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+dt i {
+  color: var(--accent);
+  opacity: .5;
+  display: block;
+}
+dt span {
+    display: block;
 }
 dt,
 dd {
@@ -112,8 +200,7 @@ aside dl * {
   line-height: 1rem;
 }
 aside dl div {
-    
-    margin: .7rem .2rem;
+  margin: 0.1rem 0.2rem;
 }
 aside dl dt {
   --iconsize: 2rem;
@@ -124,9 +211,15 @@ aside dl dt {
   font-size: var(--iconsize);
   opacity: 0.1;
   /*z-index: 1;
-  */color: var(--accent);
+  */
+  color: var(--accent);
   filter: brightness(200%);
   -webkit-filter: brightness(200%);
+}
+aside time,
+aside a {
+  color: #eee;
+  opacity: 0.8;
 }
 #portrait-background {
   z-index: 0;
@@ -158,6 +251,7 @@ a {
   color: var(--accent);
   font-weight: 300;
 }
+
 ul {
   padding: 0;
 }
@@ -180,6 +274,7 @@ li {
   display: flex;
   align-items: center;
   /* height: 300px; */
+  font-size: 1.2rem;
 }
 .accent {
   color: var(--accent);

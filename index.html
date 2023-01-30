@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <title>Gorro_Rojo</title>
-    <meta name="description" content="Curriculum of Gorro_Rojo. Junior/Trainee Software Developer passionate about both new technologies and existing infrastructure. Looking to build an accessible and energy-efficient future with inclusive spaces of mutual care and collaboration through good-faith communication.">
+    <meta
+      name="description"
+      content="Curriculum of Gorro_Rojo. Junior/Trainee Software Developer passionate about both new technologies and existing infrastructure. Looking to build an accessible and energy-efficient future with inclusive spaces of mutual care and collaboration through good-faith communication."
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
@@ -12,21 +15,25 @@
       integrity="sha512-c0+vSv9tnGS4fzwTIBFPcdCZ0QwP+aTePvZeAJkYpbj67KvQ5+VrJjDh3lil48LILJxhICQf66dQ8t/BJyOo/g=="
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   </head>
   <body>
-    <header>
-      <h1>Gorro_Rojo</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">CV</a>
-          </li>
-          <li>
-            <a href="/portfolio.html">Portfolio</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div id="topbar">
+      <header>
+        <h1>Gorro_Rojo</h1>
+        <nav>
+          <ul>
+            <li class="tab-active">
+              <a href="#">CV</a>
+            </li>
+            <li>
+              <a href="/portfolio.html">Portfolio</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main id="cv">
       <header>
         <div id="portrait-wrapper">
@@ -67,12 +74,16 @@
           <div>
             <dt><i class="bi bi-geo-alt" alt="Location"></i></dt>
             <dd>
-              <a aria-label="Location" href="geo:-34.5802,-58.4246">Palermo, CABA, Argentina</a>
+              <a aria-label="Location" href="geo:-34.5802,-58.4246"
+                >Palermo, CABA, Argentina</a
+              >
             </dd>
           </div>
           <div>
             <dt><i class="bi bi-calendar-date" alt="Date of Birth"></i></dt>
-            <dd><time datetime="20000804">2000-08-04</time></dd>
+            <dd>
+              <time datetime="20000804">2000-08-04</time>
+            </dd>
           </div>
           <div>
             <dt><i class="bi bi-envelope" alt="e-mail"></i></dt>
@@ -110,72 +121,84 @@
           </div>
         </dl>
       </aside>
+      <div id="sections">
       <section id="skills">
         <h3>Skills</h3>
         <dl>
-          <dt><i class="bi bi-box"></i> Blender</dt>
-          <dd>
-            <ul>
-              <li>Modeling</li>
-              <li>Shading</li>
-              <li>Lighting</li>
-              <li>Rendering</li>
-              <li>Camera Tracking</li>
-              <li>CGI</li>
-              <li>VFX</li>
-              <li>Rigging</li>
-              <li>Motion Graphics</li>
-              <li>Procedural</li>
-            </ul>
-          </dd>
-          <dt><i class="bi bi-file-earmark-code"></i> Programming</dt>
-          <dd>
-            <ul>
-              <li>HTML/CSS/JS</li>
-              <li>SASS/SCSS</li>
-              <li>Typescript</li>
-              <li>ReactJS</li>
-              <li>jQuery</li>
-              <li>SAP ABAP</li>
-              <li>C#</li>
-              <li>Python</li>
-            </ul>
-          </dd>
+          <div>
+            
+            <dt><i class="bi bi-box"></i><span>Blender</span><i class="bi bi-box"></i></dt>
+            <dd>
+              <ul>
+                <li>Modeling</li>
+                <li>Shading</li>
+                <li>Lighting</li>
+                <li>Rendering</li>
+                <li>Camera Tracking</li>
+                <li>CGI</li>
+                <li>VFX</li>
+                <li>Rigging</li>
+                <li>Motion Graphics</li>
+                <li>Procedural</li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt><i class="bi bi-file-earmark-code"></i><span>Programming</span> <i class="bi bi-file-earmark-code"></i></dt>
+            <dd>
+              <ul>
+                <li>HTML/CSS/JS</li>
+                <li>SASS/SCSS</li>
+                <li>Typescript</li>
+                <li>ReactJS</li>
+                <li>jQuery</li>
+                <li>SAP ABAP</li>
+                <li>C#</li>
+                <li>Python</li>
+              </ul>
+            </dd>
+          </div>
         </dl>
       </section>
       <section id="interests">
         <h3>Interests</h3>
         <dl>
-          <dt><i class="bi bi-infinity"></i> Disability and Neurodivergence</dt>
-          <dd>
-            <ul>
-              <li>Accesibility</li>
-              <li>Disability</li>
-              <li>Screen-readers</li>
-              <li>Mental Health</li>
-              <li>Neurodivergence</li>
-            </ul>
-          </dd>
-          <dt><i class="bi bi-heart"></i> Performing Arts</dt>
-          <dd>
-            <ul>
-              <li>Theatre</li>
-              <li>Musical Theatre</li>
-              <li>Singing</li>
-              <li>Dancing</li>
-              <li>Acting</li>
-              <li>Piano</li>
-            </ul>
-          </dd>
-          <dt><i class="bi bi-camera2"></i> Media Arts</dt>
-          <dd>
-            <ul>
-              <li>Photography</li>
-              <li>3D Art</li>
-              <li>Filmmaking</li>
-              <li>VFX & Video Editing</li>
-            </ul>
-          </dd>
+          <div>
+            <dt><i class="bi bi-infinity"></i><span>Disability and Neurodivergence </span><i class="bi bi-infinity"></i></dt>
+            <dd>
+              <ul>
+                <li>Accesibility</li>
+                <li>Disability</li>
+                <li>Screen-readers</li>
+                <li>Mental Health</li>
+                <li>Neurodivergence</li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt><i class="bi bi-heart"></i><span>Performing Arts</span> <i class="bi bi-heart"></i></dt>
+            <dd>
+              <ul>
+                <li>Theatre</li>
+                <li>Musical Theatre</li>
+                <li>Singing</li>
+                <li>Dancing</li>
+                <li>Acting</li>
+                <li>Piano</li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt><i class="bi bi-camera2"></i><span>Media Arts</span> <i class="bi bi-camera2"></i></dt>
+            <dd>
+              <ul>
+                <li>Photography</li>
+                <li>3D Art</li>
+                <li>Filmmaking</li>
+                <li>VFX & Video Editing</li>
+              </ul>
+            </dd>
+          </div>
         </dl>
       </section>
       <!-- ⬇ MD, musicales, freecodeCamp ⬇ -->
@@ -184,78 +207,88 @@
       <section id="volunteering">
         <h3>Volunteering</h3>
         <dl>
-          <dt>
-            No es Magia, es Ciencia!
-            <a href="https://www.instagram.com/p/CbBYTPQOMaT/" target="_parent"
-              ><i alt="Go to link" class="bi bi-link"></i
-            ></a>
-          </dt>
-          <div style="font-size: 0.8rem; opacity: 0.8; margin-bottom: 0.6rem"><em>(Its not magic, it's science!)</em></div>
-          <dd>
-            Went to underprivileged neighborhoods and helped conduct a science
-            fair for children.
-          </dd>
+          <div>
+            <dt>
+              No es Magia, es Ciencia!
+              <a href="https://www.instagram.com/p/CbBYTPQOMaT/" target="_parent"
+                ><i alt="Go to link" class="bi bi-link"></i
+                  ></a></br>
+                  <span style="font-size: 0.8rem; opacity: 0.8; margin-bottom: 0.6rem; display: block;">
+                    <em>(Its not magic, it's science!)</em>
+                  </span>
+            </dt>
+            <dd>
+              Went to underprivileged neighborhoods and helped conduct a science
+              fair for children.
+            </dd>
+          </div>
         </dl>
       </section>
       <section id="publications"></section>
       <section id="certifications">
         <h3>Certifications</h3>
         <dl>
-          <dt>
-            Front-End Libraries
-            <a
-              href="https://www.freecodecamp.org/certification/gorro_rojo/front-end-development-libraries"
-              alt="Go to link"
-              target="_parent"
-              ><i class="bi bi-link"></i
-            ></a>
-            <span class="institution">@ freeCodeCamp</span>
-          </dt>
-          <dd>
-            <ul>
-              <li>ReactJS</li>
-              <li>jQuery</li>
-              <li>Bootstrap</li>
-              <li>SASS</li>
-              <li>Redux</li>
-              <li>React-Redux-Thunk</li>
-            </ul>
-          </dd>
-          <dt>
-            Javascript Algorithms and Data Structures
-            <a
-              href="https://www.freecodecamp.org/certification/gorro_rojo/javascript-algorithms-and-data-structures"
-              alt="Go to link"
-              target="_parent"
-              ><i class="bi bi-link"></i
-            ></a>
-            <span class="institution">@ freeCodeCamp</span>
-          </dt>
-          <dd>
-            <ul>
-              <li>Javascript - ES6</li>
-              <li>Regular Expressions</li>
-              <li>Object-oriented Programming</li>
-              <li>Functional Programming</li>
-              <li>JS Data Structures</li>
-              <li>Algorithm Scripting</li>
-            </ul>
-          </dd>
-          <dt>
-            Responsive Web Design
-            <a href="#" alt="Go to link" target="_parent"
-              ><i class="bi bi-link"></i
-            ></a>
-            <span class="institution">@ freeCodeCamp</span>
-          </dt>
-          <dd>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Flexbox</li>
-              <li>Accessibility</li>
-            </ul>
-          </dd>
+          <div>
+            <dt>
+              Front-End Libraries
+              <a
+                href="https://www.freecodecamp.org/certification/gorro_rojo/front-end-development-libraries"
+                alt="Go to link"
+                target="_parent"
+                ><i class="bi bi-link"></i
+              ></a>
+              <span class="institution">@ freeCodeCamp</span>
+            </dt>
+            <dd>
+              <ul>
+                <li>ReactJS</li>
+                <li>jQuery</li>
+                <li>Bootstrap</li>
+                <li>SASS</li>
+                <li>Redux</li>
+                <li>React-Redux-Thunk</li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>
+              Javascript Algorithms and Data Structures
+              <a
+                href="https://www.freecodecamp.org/certification/gorro_rojo/javascript-algorithms-and-data-structures"
+                alt="Go to link"
+                target="_parent"
+                ><i class="bi bi-link"></i
+              ></a>
+              <span class="institution">@ freeCodeCamp</span>
+            </dt>
+            <dd>
+              <ul>
+                <li>Javascript - ES6</li>
+                <li>Regular Expressions</li>
+                <li>Object-oriented Programming</li>
+                <li>Functional Programming</li>
+                <li>JS Data Structures</li>
+                <li>Algorithm Scripting</li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>
+              Responsive Web Design
+              <a href="#" alt="Go to link" target="_parent"
+                ><i class="bi bi-link"></i
+              ></a>
+              <span class="institution">@ freeCodeCamp</span>
+            </dt>
+            <dd>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Flexbox</li>
+                <li>Accessibility</li>
+              </ul>
+            </dd>
+          </div>
         </dl>
       </section>
       <section id="education"></section>
@@ -280,6 +313,7 @@
           </div>
         </dl>
       </section>
+    </div>
     </main>
     <footer></footer>
   </body>
