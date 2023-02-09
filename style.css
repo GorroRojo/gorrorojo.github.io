@@ -104,6 +104,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 section:empty {
   display: none;
   padding: 0;
@@ -115,6 +116,16 @@ section {
   margin: 1em;
   border-radius: 3px;
   /* border-left: 1px var(--accent) solid */
+}
+@media (max-width: 755px) {
+  #sections {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  section {
+    max-width: 80%;
+    width: 100%;
+  }
 }
 section h3 {
   font-weight: bold;
@@ -237,6 +248,13 @@ aside a {
   /* border-bottom-left-radius: var(--size); */
   /* border-bottom-right-radius: var(--size); */
   /* display:none; */
+}
+@media (max-width:900px){
+  
+  #portrait-wrapper {
+    position: absolute;
+    display: none;
+  }
 }
 figure img {
   width: calc(100% * var(--image-size));
