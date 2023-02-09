@@ -69,6 +69,11 @@ body {
   -ms-border-radius: 0;
   -o-border-radius: 0;
 }
+@media (max-width: 450px){
+  #topbar li {
+    width: 4rem;
+  }
+}
 #topbar .tab-active {
   background: rgb(43, 43, 43);
 }
